@@ -12,9 +12,9 @@
     <a href="index.html" class="logo">BRUNO <span>DATA</span></a>
     <nav class="nav-links">
       <a href="index.html">Início</a>
-      <a href="dashboards.html">Dashboards</a>
+      <a href="index.html#dashboards">Dashboards</a>
       <a href="sobre.html" class="active">Sobre Mim</a>
-      <a href="contato.html">Contato</a>
+      <a href="index.html#contato">Contato</a>
     </nav>
   </header>
 
@@ -24,7 +24,7 @@
         <div class="about-card">
           <h1 class="section-title">Sobre Mim</h1>
           
-          <div class="about-section">
+          <div class="about-content">
             <p>
               <strong>Olá, eu sou o Bruno.</strong>
             </p>
@@ -35,38 +35,41 @@
               melhor as operações do dia a dia.
             </p>
 
-            <p>
-              Com o tempo, percebi o impacto que uma informação bem organizada tem dentro de um processo. Isso despertou minha
-              vontade de ir além.
-            </p>
+            <div class="about-full expanded" id="aboutFull">
+              <p>
+                Com o tempo, percebi o impacto que uma informação bem organizada tem dentro de um processo. Isso despertou minha
+                vontade de ir além.
+              </p>
 
-            <p>
-              Comecei então a explorar <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
-              esses dados diretamente no <strong>Power Query</strong>. Esse foi meu primeiro contato com automação e inteligência
-              na coleta e limpeza das informações, e isso abriu uma porta que eu nunca mais quis fechar.
-            </p>
+              <p>
+                Comecei então a explorar <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
+                esses dados diretamente no <strong>Power Query</strong>. Esse foi meu primeiro contato com automação e inteligência
+                na coleta e limpeza das informações, e isso abriu uma porta que eu nunca mais quis fechar.
+              </p>
 
-            <p>
-              Hoje, dei mais um passo importante: estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
-              As consultas que alimentam meus dashboards agora são feitas diretamente no banco — estruturadas, rápidas e organizadas —
-              e só depois seguem para modelagem no Power BI.
-            </p>
+              <p>
+                Hoje, dei mais um passo importante: estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
+                As consultas que alimentam meus dashboards agora são feitas diretamente no banco — estruturadas, rápidas e organizadas —
+                e só depois seguem para modelagem no Power BI.
+              </p>
 
-            <p>
-              Esse avanço não só melhorou a performance dos meus dashboards, como também aumentou muito minha visão sobre dados,
-              processos e indicadores.
-            </p>
+              <p>
+                Esse avanço não só melhorou a performance dos meus dashboards, como também aumentou muito minha visão sobre dados,
+                processos e indicadores.
+              </p>
 
-            <p>
-              Ainda tenho muito a aprender — e isso é justamente o que me motiva. Cada projeto é uma oportunidade de evoluir,
-              experimentar e entregar análises mais inteligentes e eficientes.
-            </p>
+              <p>
+                Ainda tenho muito a aprender — e isso é justamente o que me motiva. Cada projeto é uma oportunidade de evoluir,
+                experimentar e entregar análises mais inteligentes e eficientes.
+              </p>
 
-            <p>
-              Fique à vontade para explorar minhas criações.  
-              Espero que elas transmitam a mesma dedicação e curiosidade que eu coloco em cada uma.
-            </p>
+              <p>
+                Fique à vontade para explorar minhas criações.  
+                Espero que elas transmitam a mesma dedicação e curiosidade que eu coloco em cada uma.
+              </p>
+            </div>
           </div>
+          <button class="toggle-btn" id="toggleAbout">Ver menos</button>
         </div>
       </div>
     </section>
@@ -77,5 +80,7 @@
       <p>&copy; 2023 Bruno Pedrosa. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
