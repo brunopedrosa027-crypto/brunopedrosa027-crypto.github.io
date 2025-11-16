@@ -1,47 +1,179 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Bruno Pedrosa</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bruno Pedrosa — Portfólio Data</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="dark-bg">
-  <header class="navbar">
-    <h1 class="logo">BRUNO <span>DATA</span></h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="dashboards.html">Dashboards</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <div class="nav-inner">
+      <div class="logo">BRUNO <span>DATA</span></div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero neon-glow">
-    <h2>Bem-vindo ao meu Portfólio</h2>
-    <p>Análise de dados • Dashboards • Automação • SQL</p>
-    <a href="dashboards.html" class="btn-neon">Ver Projetos</a>
-  </section>
-
-  <section class="cards-container">
-    <div class="card neon-border">
-      <h3>Dashboards</h3>
-      <p>Visualizações criadas no Power BI usando dados reais e pipelines eficientes.</p>
-      <a href="dashboards.html" class="btn-card">Explorar</a>
-    </div>
-
-    <div class="card neon-border">
-      <h3>Sobre Mim</h3>
-      <p>Conheça minha jornada e evolução no mundo de dados.</p>
-      <a href="sobre.html" class="btn-card">Ler Mais</a>
-    </div>
-
-    <div class="card neon-border">
-      <h3>Contato</h3>
-      <p>Vamos conversar? Fique à vontade para me chamar.</p>
-      <a href="contato.html" class="btn-card">Entrar em Contato</a>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-card">
+      <h1>BRUNO PEDROSA <span class="muted">• Auxiliar Administrativo</span></h1>
+      <p class="lead">Estudante de ADS | Transformando dados em clareza — Power BI • SQL • APIs • IA</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#dashboards">Ver Dashboards ↓</a>
+        <a class="btn btn-ghost" href="#sobre">Sobre mim</a>
+      </div>
     </div>
   </section>
 
+  <!-- SOBRE -->
+  <section id="sobre" class="section section-card">
+    <div class="section-card-inner">
+      <h2>Sobre Mim</h2>
+      <p class="lead">Nos últimos meses, iniciei uma jornada intensa no mundo de dados. Comecei criando dashboards no Excel e, rapidamente, evoluí para trabalhar com JSONs extraídos de APIs REST, tratá-los no Power Query e construir visualizações úteis.</p>
+      <p>Atualmente curso o 1º período de Análise e Desenvolvimento de Sistemas e venho implementando consultas em <strong>Azure SQL</strong> para estruturar os dados antes da modelagem no Power BI — melhorando performance e organização. Ainda estou em evolução, mas já desenvolvi dashboards operacionais que ajudam a tomar decisões no dia a dia.</p>
+      <p class="muted">Fique à vontade para explorar meus projetos abaixo — os dashboards têm páginas individuais onde, em breve, colocarei PDFs e prints.</p>
+    </div>
+  </section>
+
+  <!-- DASHBOARDS -->
+  <section id="dashboards" class="section section-dark">
+    <div class="section-inner">
+      <h2 class="section-title">Dashboards</h2>
+      <p class="section-sub">Três projetos consistentes com foco em operação e logística.</p>
+
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-icon" aria-hidden>
+            <!-- Truck box SVG simplified -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 7h11v10H3z" stroke="#4dd0e1" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 7h3l3 3v7h-6" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="7" cy="18" r="1.6" fill="#4dd0e1"/>
+              <circle cx="18" cy="18" r="1.6" fill="#8a2be2"/>
+            </svg>
+          </div>
+          <h3>Expedição</h3>
+          <p class="card-desc">Análise completa de expedição: tracking de frota, separação, conferência e performance operacional.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="dash-expedicao.html">Abrir Dashboard</a>
+            <button class="icon-btn" title="Detalhes">ℹ️</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-icon" aria-hidden>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="#4dd0e1" stroke-width="1.4"/>
+              <path d="M7 9h10" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="9.5" cy="16.5" r="0.9" fill="#4dd0e1"/>
+              <circle cx="14.5" cy="16.5" r="0.9" fill="#8a2be2"/>
+            </svg>
+          </div>
+          <h3>Vendas & Pedidos</h3>
+          <p class="card-desc">Controle de pedidos, notas fiscais e performance por modelo — insights para tomada de decisão.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="dash-vendas.html">Abrir Dashboard</a>
+            <button class="icon-btn" title="Detalhes">ℹ️</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-icon" aria-hidden>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12h12" stroke="#4dd0e1" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M7 6v12" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M17 8h4v8h-4" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Logística & Transporte</h3>
+          <p class="card-desc">Monitoramento de viagens, transportadoras, tempos médios e identificação de gargalos operacionais.</p>
+          <div class="card-actions">
+            <a class="btn btn-outline" href="dash-logistica.html">Abrir Dashboard</a>
+            <button class="icon-btn" title="Detalhes">ℹ️</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-card">
+    <div class="skills-inner">
+      <h2>Skills</h2>
+      <p class="section-sub">Ferramentas e conhecimentos</p>
+      <div class="skills-grid">
+        <span class="skill"><strong>Power BI</strong></span>
+        <span class="skill"><strong>Power Query</strong></span>
+        <span class="skill"><strong>DAX</strong></span>
+        <span class="skill"><strong>Excel</strong></span>
+        <span class="skill"><strong>API / JSON</strong></span>
+        <span class="skill"><strong>SQL (iniciante/intermediário)</strong></span>
+        <span class="skill"><strong>IA / Inteligência Artificial</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section section-dark">
+    <div class="section-inner">
+      <h2>Contato</h2>
+      <p class="section-sub">Vamos conversar? Me chama no LinkedIn ou mande um e-mail.</p>
+      <div class="contact-row">
+        <div class="contact-card">
+          <label>Email</label>
+          <div class="contact-line">
+            <input id="emailInput" readonly value="seu.email@exemplo.com" />
+            <button id="copyBtn" class="btn-sm">Copiar</button>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <label>LinkedIn</label>
+          <div class="contact-line">
+            <a href="https://www.linkedin.com/in/seulink" target="_blank" class="link">linkedin.com/in/seulink</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div>© 2025 Bruno Pedrosa — Portfólio</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+
+    // copy email
+    document.getElementById('copyBtn').addEventListener('click', function(){
+      const el = document.getElementById('emailInput');
+      el.select ? (el.select(), document.execCommand('copy')) : navigator.clipboard.writeText(el.value);
+      this.textContent = 'Copiado!';
+      setTimeout(()=> this.textContent = 'Copiar', 1500);
+    });
+  </script>
 </body>
 </html>
