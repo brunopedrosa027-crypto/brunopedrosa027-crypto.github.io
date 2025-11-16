@@ -12,9 +12,9 @@
     <a href="index.html" class="logo">BRUNO <span>DATA</span></a>
     <nav class="nav-links">
       <a href="index.html" class="active">Início</a>
-      <a href="dashboards.html">Dashboards</a>
-      <a href="sobre.html">Sobre Mim</a>
-      <a href="contato.html">Contato</a>
+      <a href="#dashboards">Dashboards</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
@@ -24,25 +24,97 @@
       <div class="container">
         <h1>Transformando Dados em Insights</h1>
         <p>Análise de dados, dashboards e visualizações que contam histórias e impulsionam decisões.</p>
-        <a href="dashboards.html" class="btn">Ver Projetos</a>
+        <a href="#dashboards" class="btn">Ver Projetos</a>
+      </div>
+    </section>
+
+    <!-- DASHBOARDS -->
+    <section id="dashboards" class="section">
+      <div class="container">
+        <h2 class="section-title">Dashboards</h2>
+        <p class="section-subtitle">Projetos de análise de dados e visualização</p>
+        
+        <div class="dashboard-grid">
+          <div class="dash-card">
+            <div class="dash-icon">📊</div>
+            <h3>Expedição</h3>
+            <p>Dashboard de análise de processos de expedição com métricas de eficiência e performance.</p>
+            <a href="expedicao.html" class="dash-btn">Ver Projeto</a>
+          </div>
+          
+          <div class="dash-card">
+            <div class="dash-icon">📈</div>
+            <h3>Dashboard 2</h3>
+            <p>Descrição do segundo dashboard em desenvolvimento.</p>
+            <a href="#" class="dash-btn">Ver Projeto</a>
+          </div>
+          
+          <div class="dash-card">
+            <div class="dash-icon">🔍</div>
+            <h3>Dashboard 3</h3>
+            <p>Descrição do terceiro dashboard em desenvolvimento.</p>
+            <a href="#" class="dash-btn">Ver Projeto</a>
+          </div>
+          
+          <div class="dash-card">
+            <div class="dash-icon">📊</div>
+            <h3>Dashboard 4</h3>
+            <p>Descrição do quarto dashboard em desenvolvimento.</p>
+            <a href="#" class="dash-btn">Ver Projeto</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- SOBRE MIM -->
-    <section class="section">
+    <section id="sobre" class="section">
       <div class="container">
         <h2 class="section-title">Sobre Mim</h2>
         <p class="section-subtitle">Conheça minha jornada e habilidades em análise de dados</p>
         
         <div class="about-card">
-          <p>
-            <strong>Olá, eu sou o Bruno.</strong> Há pouco tempo — cerca de dois meses — iniciei uma jornada que mudou completamente a forma como trabalho com dados.
-          </p>
-          <p>
-            Comecei explorando <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
-            esses dados diretamente no <strong>Power Query</strong>. Hoje, estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
-          </p>
-          <a href="sobre.html" class="dash-btn">Ler mais</a>
+          <div class="about-content">
+            <p>
+              <strong>Olá, eu sou o Bruno.</strong> Há pouco tempo — cerca de dois meses — iniciei uma jornada que mudou completamente a forma como trabalho com dados.
+            </p>
+            <p>
+              Comecei explorando <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
+              esses dados diretamente no <strong>Power Query</strong>. Hoje, estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
+            </p>
+            <div class="about-full" id="aboutFull">
+              <p>
+                Tudo começou de maneira simples: fazendo análises e controles no Excel, criando pequenos relatórios para entender
+                melhor as operações do dia a dia.
+              </p>
+              <p>
+                Com o tempo, percebi o impacto que uma informação bem organizada tem dentro de um processo. Isso despertou minha
+                vontade de ir além.
+              </p>
+              <p>
+                Comecei então a explorar <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
+                esses dados diretamente no <strong>Power Query</strong>. Esse foi meu primeiro contato com automação e inteligência
+                na coleta e limpeza das informações, e isso abriu uma porta que eu nunca mais quis fechar.
+              </p>
+              <p>
+                Hoje, dei mais um passo importante: estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
+                As consultas que alimentam meus dashboards agora são feitas diretamente no banco — estruturadas, rápidas e organizadas —
+                e só depois seguem para modelagem no Power BI.
+              </p>
+              <p>
+                Esse avanço não só melhorou a performance dos meus dashboards, como também aumentou muito minha visão sobre dados,
+                processos e indicadores.
+              </p>
+              <p>
+                Ainda tenho muito a aprender — e isso é justamente o que me motiva. Cada projeto é uma oportunidade de evoluir,
+                experimentar e entregar análises mais inteligentes e eficientes.
+              </p>
+              <p>
+                Fique à vontade para explorar minhas criações.  
+                Espero que elas transmitam a mesma dedicação e curiosidade que eu colopo em cada uma.
+              </p>
+            </div>
+          </div>
+          <button class="toggle-btn" id="toggleAbout">Ver mais</button>
         </div>
       </div>
     </section>
@@ -65,12 +137,36 @@
         </div>
       </div>
     </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-subtitle">Entre em contato comigo através dos canais abaixo</p>
+        
+        <div class="about-card">
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Email:</strong> brunodalpra2000@gmail.com
+            </div>
+            <div class="contact-item">
+              <strong>LinkedIn:</strong> 
+              <a href="https://www.linkedin.com/in/bruno-dalpra-s-pedrosa-761304385" target="_blank">
+                https://www.linkedin.com/in/bruno-dalpra-s-pedrosa-761304385
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2023 Bruno Pedrosa. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Bruno Pedrosa. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
