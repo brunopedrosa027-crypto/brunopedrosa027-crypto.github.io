@@ -200,10 +200,12 @@ main {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
+  opacity: 0;
 }
 
 .about-full.expanded {
   max-height: 2000px;
+  opacity: 1;
 }
 
 .toggle-btn {
