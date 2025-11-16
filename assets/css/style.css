@@ -1,0 +1,235 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-dark: #0d0f16;
+  --bg-card: #141720;
+  --bg-hover: #1b1f2b;
+  --text-light: #e6e6e6;
+  --text-muted: #9a9a9a;
+  --primary: #6a5acd; /* roxo elegante */
+  --primary-glow: #8c78ff;
+  --border-glow: rgba(138, 114, 255, 0.35);
+}
+
+/* ============================= */
+/*   RESET E BASE                */
+/* ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ============================= */
+/*   NAVBAR                      */
+/* ============================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  background: rgba(10, 10, 18, 0.65);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar nav a:hover {
+  color: var(--primary);
+}
+
+/* ============================= */
+/*   HERO / HOME                 */
+/* ============================= */
+
+.hero {
+  padding-top: 130px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 0 0 30px var(--border-glow);
+}
+
+.hero p {
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.hero .btn {
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: var(--primary);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.hero .btn:hover {
+  background: var(--primary-glow);
+  transform: translateY(-3px);
+}
+
+/* ============================= */
+/*   SEÇÕES                      */
+/* ============================= */
+
+section {
+  padding: 80px 12%;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 50px;
+}
+
+/* ============================= */
+/*   SOBRE MIM - CARD            */
+/* ============================= */
+
+.about-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 0 25px rgba(120, 90, 255, 0.1);
+}
+
+/* ============================= */
+/*   DASHBOARD CARDS             */
+/* ============================= */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.dash-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.25s;
+  text-align: center;
+}
+
+.dash-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: 0 0 25px rgba(138, 114, 255, 0.25);
+}
+
+.dash-icon {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.dash-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.dash-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.dash-btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  transition: 0.25s;
+  font-weight: 600;
+}
+
+.dash-btn:hover {
+  background: var(--primary-glow);
+}
+
+/* ============================= */
+/*   SKILLS                      */
+/* ============================= */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-pill {
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.skill-pill:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* ============================= */
+/*   FOOTER                      */
+/* ============================= */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--text-muted);
+  margin-top: 50px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
