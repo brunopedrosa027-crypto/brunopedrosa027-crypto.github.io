@@ -5,6 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboards - Portfólio Bruno Pedrosa</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* ======== ESTILO GLOBAL ======== */
+    body.dark-bg {
+      background: linear-gradient(135deg, #0b0f17, #1a1f2b);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ======== NAVBAR ======== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .logo span {
+      color: #4da6ff;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4da6ff;
+    }
+
+    /* ======== TÍTULO DA PÁGINA ======== */
+    .page-title {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+
+    .page-title h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .page-title p {
+      color: #cccccc;
+      font-size: 18px;
+    }
+
+    /* ======== CARDS DE DASHBOARD ======== */
+    .dashboard-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 40px 70px;
+    }
+
+    .dash-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .dash-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .dash-icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .dash-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .dash-card p {
+      font-size: 15px;
+      color: #d1d1d1;
+      margin-bottom: 20px;
+    }
+
+    /* ======== BOTÃO DO CARD ======== */
+    .dash-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #4da6ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .dash-btn:hover {
+      background: #6eb7ff;
+      transform: translateY(-3px);
+    }
+  </style>
 </head>
 <body class="dark-bg">
   <header class="navbar">
