@@ -3,210 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bruno Pedrosa - Portfólio</title>
+  <title>Bruno Pedrosa | Analista de Dados</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <a href="index.html" class="logo">BRUNO <span>DATA</span></a>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Início</a>
-      <a href="#dashboards">Dashboards</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="logo">Bruno <span>Pedrosa</span></a>
+    
+    <nav class="navbar">
+      <a href="#home" class="active">Início</a>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
     </nav>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="container">
-        <h1>Transformando Dados em Insights</h1>
-        <p>Análise de dados, dashboards e visualizações que contam histórias e impulsionam decisões.</p>
-        <a href="#dashboards" class="btn">Ver Projetos</a>
+  <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Olá, eu sou <span>Bruno</span></h1>
+      <h3 class="typing-text">Analista de <span>Dados</span></h3>
+      <p>Transformo dados complexos em insights acionáveis através de dashboards inteligentes e análises profundas.</p>
+      
+      <div class="social-icons">
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-gmail'></i></a>
       </div>
-    </section>
+      
+      <div class="btn-group">
+        <a href="#projects" class="btn">Ver Projetos</a>
+        <a href="#contact" class="btn">Contato</a>
+      </div>
+    </div>
+    
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Data Analysis">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- DASHBOARDS -->
-    <section id="dashboards" class="section">
-      <div class="container">
-        <h2 class="section-title">Dashboards</h2>
-        <p class="section-subtitle">Projetos de análise de dados e visualização</p>
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="About Me">
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-content">
+      <h2 class="heading">Sobre <span>Mim</span></h2>
+      <p class="subtitle">Da operação à análise: transformando processos através dos dados</p>
+      
+      <div class="about-text">
+        <p>
+          Minha jornada com dados começou na prática, identificando gaps em processos reais de logística de veículos. 
+          Como auxiliar administrativo, percebi que as decisões eram tomadas sem o suporte de dados consolidados.
+        </p>
         
-        <div class="dashboard-grid">
-          <div class="dash-card">
-            <div class="dash-icon">🚗</div>
-            <h3>Logística de Veículos</h3>
-            <p>Dashboard completo para tracking de veículos do porto até a expedição final.</p>
-            <a href="expedicao.html" class="dash-btn">Ver Projeto</a>
+        <p>
+          Em <strong>apenas 2 meses</strong>, evolui de planilhas manuais no Excel para desenvolver dashboards completos 
+          em Power BI, dominando medidas DAX, modelagem de dados no Power Query e criando pipelines ETL que extraem 
+          dados diretamente de APIs REST.
+        </p>
+        
+        <div class="about-details" id="aboutDetails">
+          <div class="evolution-timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">1</div>
+              <div class="timeline-content">
+                <h4>Excel e Processos Manuais</h4>
+                <p>Iniciei com planilhas manuais e consultas pesadas no Excel, identificando a necessidade urgente de automação.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-marker">2</div>
+              <div class="timeline-content">
+                <h4>Automação com Power Query</h4>
+                <p>Desenvolvi ETLs automatizados extraindo dados de APIs REST, reduzindo o tempo de processamento em 70%.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-marker">3</div>
+              <div class="timeline-content">
+                <h4>SQL e Arquitetura Escalável</h4>
+                <p>Migrei para SQL Server (Azure), criando views otimizadas que melhoraram a performance em 5x.</p>
+              </div>
+            </div>
           </div>
           
-          <div class="dash-card">
-            <div class="dash-icon">📊</div>
-            <h3>Performance Operacional</h3>
-            <p>Métricas de eficiência e indicadores de performance para tomada de decisão.</p>
-            <a href="#" class="dash-btn">Ver Projeto</a>
+          <div class="achievements">
+            <h4>Resultados Concretos</h4>
+            <div class="achievement-grid">
+              <div class="achievement-item">
+                <i class='bx bx-time'></i>
+                <span>80% menos tempo em relatórios</span>
+              </div>
+              <div class="achievement-item">
+                <i class='bx bx-trending-up'></i>
+                <span>Consultas 5x mais rápidas</span>
+              </div>
+              <div class="achievement-item">
+                <i class='bx bx-refresh'></i>
+                <span>Processos automatizados</span>
+              </div>
+              <div class="achievement-item">
+                <i class='bx bx-data'></i>
+                <span>Dados em tempo real</span>
+              </div>
+            </div>
           </div>
-          
-          <div class="dash-card">
-            <div class="dash-icon">⚡</div>
+        </div>
+      </div>
+      
+      <button class="btn toggle-details" id="toggleDetails">
+        <span>Ver mais</span>
+        <i class='bx bx-chevron-down'></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="heading">Minhas <span>Habilidades</span></h2>
+      <p class="subtitle">Tecnologias e ferramentas que domino</p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Visualização</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class='bx bxs-dashboard'></i>
+              <span>Power BI</span>
+            </div>
+            <div class="skill-item">
+              <i class='bx bx-table'></i>
+              <span>Excel</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Banco de Dados</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class='bx bx-data'></i>
+              <span>SQL Server</span>
+            </div>
+            <div class="skill-item">
+              <i class='bx bxs-cloud'></i>
+              <span>Azure SQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>ETL & Processamento</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class='bx bx-transfer'></i>
+              <span>Power Query</span>
+            </div>
+            <div class="skill-item">
+              <i class='bx bx-code-curly'></i>
+              <span>DAX</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Integração</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class='bx bx-api'></i>
+              <span>APIs REST</span>
+            </div>
+            <div class="skill-item">
+              <i class='bx bx-code-alt'></i>
+              <span>JSON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="heading">Meus <span>Projetos</span></h2>
+      <p class="subtitle">Dashboards e soluções em análise de dados</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Dashboard Logística">
+          </div>
+          <div class="project-content">
+            <h3>Dashboard de Logística</h3>
+            <p>Sistema completo de tracking de veículos do porto até a expedição final com métricas de performance.</p>
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>SQL</span>
+              <span>API REST</span>
+            </div>
+            <div class="project-links">
+              <a href="expedicao.html" class="btn btn-small">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="ETL Automatizado">
+          </div>
+          <div class="project-content">
             <h3>ETL Automatizado</h3>
-            <p>Sistema de extração e transformação de dados via API REST.</p>
-            <a href="#" class="dash-btn">Ver Projeto</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MIM -->
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2 class="section-title">Sobre Mim</h2>
-        <p class="section-subtitle">Da operação à análise: transformando processos através dos dados</p>
-        
-        <div class="about-card">
-          <div class="about-content">
-            <p class="intro-text">
-              <strong>Minha jornada com dados começou na prática</strong>, identificando gaps em processos reais de logística de veículos. Como auxiliar administrativo, percebi que as decisões eram tomadas sem o suporte de dados consolidados.
-            </p>
-            
-            <p>
-              Em <strong>apenas 2 meses</strong>, evolui de planilhas manuais no Excel para desenvolver dashboards completos em Power BI, dominando medidas DAX, modelagem de dados no Power Query e criando um pipeline ETL que extrai dados diretamente de APIs REST.
-            </p>
-            
-            <div class="about-full" id="aboutFull">
-              <div class="spacing"></div>
-
-              <p>
-                <strong>Minha evolução técnica seguiu 3 fases:</strong>
-              </p>
-
-              <div class="evolution-phase">
-                <h4>📊 Fase 1: Excel e Processos Manuais</h4>
-                <p>Comecei alimentando dados manualmente no Excel, com consultas pesadas que sobrecarregavam minha máquina. Percebi a necessidade de automação quando os relatórios começaram a consumir horas do meu dia.</p>
-              </div>
-
-              <div class="evolution-phase">
-                <h4>⚡ Fase 2: Automação com Power Query e APIs</h4>
-                <p>Com ajuda de IA, desenvolvi um ETL que extrai automaticamente dados JSON de APIs REST, criando payloads específicos e transformando dados brutos em informações estruturadas. Isso reduziu o tempo de processamento em 70%.</p>
-              </div>
-
-              <div class="evolution-phase">
-                <h4>🚀 Fase 3: SQL Server e Arquitetura Escalável</h4>
-                <p>Identifiquei que as consultas ainda eram um gargalo. Iniciei estudos em SQL Server (Azure) e migrei toda a lógica de consulta para o banco de dados, criando views otimizadas que alimentam os visuais no Power BI com performance superior.</p>
-              </div>
-
-              <p>
-                <strong>Resultados concretos desta evolução:</strong>
-              </p>
-              
-              <ul class="achievements-list">
-                <li>• <strong>Redução de 80%</strong> no tempo de geração de relatórios</li>
-                <li>• <strong>Consultas 5x mais rápidas</strong> com a migração para SQL</li>
-                <li>• <strong>Dados em tempo real</strong> através de integração com APIs</li>
-                <li>• <strong>Processos automatizados</strong> que antes consumiam horas</li>
-              </ul>
-
-              <p>
-                Hoje, meu foco é criar soluções que não apenas exibem dados, mas contam histórias que orientam decisões estratégicas. Cada dashboard que desenvolvo é pensado para resolver um problema real que vivi na operação.
-              </p>
-
-              <p class="closing">
-                Estou pronto para aplicar essa mesma mentalidade orientada a soluções em novos desafios, transformando dados complexos em insights acionáveis.
-              </p>
+            <p>Pipeline de dados integrando APIs REST com Power Query para processamento automatizado.</p>
+            <div class="tech-tags">
+              <span>Power Query</span>
+              <span>JSON</span>
+              <span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Ver Detalhes</a>
             </div>
           </div>
-          <button class="toggle-btn" id="toggleAbout">Ver mais</button>
         </div>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Habilidades</h2>
-        <p class="section-subtitle">Tecnologias e ferramentas que utilizo</p>
         
-        <div class="skills-container">
-          <div class="skill-pill">Power BI</div>
-          <div class="skill-pill">SQL</div>
-          <div class="skill-pill">Power Query</div>
-          <div class="skill-pill">Excel</div>
-          <div class="skill-pill">Azure SQL</div>
-          <div class="skill-pill">APIs REST</div>
-          <div class="skill-pill">JSON</div>
-          <div class="skill-pill">Análise de Dados</div>
-          <div class="skill-pill">DAX</div>
-          <div class="skill-pill">ETL</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="section">
-      <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <p class="section-subtitle">Entre em contato comigo através dos canais abaixo</p>
-        
-        <div class="about-card">
-          <div class="contact-info">
-            <div class="contact-item">
-              <strong>Email:</strong> brunodalpra2000@gmail.com
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Análise Performance">
+          </div>
+          <div class="project-content">
+            <h3>Análise de Performance</h3>
+            <p>Dashboard de métricas operacionais para tomada de decisão estratégica em tempo real.</p>
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>DAX</span>
+              <span>SQL</span>
             </div>
-            <div class="contact-item">
-              <strong>LinkedIn:</strong> 
-              <a href="https://www.linkedin.com/in/bruno-dalpra-s-pedrosa-761304385" target="_blank">
-                https://www.linkedin.com/in/bruno-dalpra-s-pedrosa-761304385
-              </a>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Ver Detalhes</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="heading">Entre em <span>Contato</span></h2>
+      <p class="subtitle">Vamos conversar sobre seus projetos de dados</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class='bx bx-envelope'></i>
+            <div>
+              <h3>Email</h3>
+              <span>brunodalpra2000@gmail.com</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class='bx bxl-linkedin'></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/bruno-dalpra-s-pedrosa-761304385" target="_blank">bruno-dalpra-s-pedrosa</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class='bx bx-map'></i>
+            <div>
+              <h3>Localização</h3>
+              <span>Disponível para oportunidades remotas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2023 Bruno Pedrosa. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <script>
-    // Funcionalidade do botão "Ver mais/Ver menos" no Sobre Mim
-    document.addEventListener('DOMContentLoaded', function() {
-      const toggleButton = document.getElementById('toggleAbout');
-      const aboutFull = document.getElementById('aboutFull');
-      
-      if (toggleButton && aboutFull) {
-        toggleButton.addEventListener('click', function() {
-          if (aboutFull.classList.contains('expanded')) {
-            aboutFull.classList.remove('expanded');
-            toggleButton.textContent = 'Ver mais';
-          } else {
-            aboutFull.classList.add('expanded');
-            toggleButton.textContent = 'Ver menos';
-          }
-        });
-      }
-
-      // Scroll suave para âncoras
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            const headerHeight = document.querySelector('.navbar').offsetHeight;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-            
-            window.scrollTo({
-              top: targetPosition,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    });
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
