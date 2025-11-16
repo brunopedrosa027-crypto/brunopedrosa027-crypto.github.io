@@ -26,43 +26,39 @@
           
           <div class="about-content">
             <p>
-              <strong>Olá, eu sou o Bruno.</strong>
+              <strong>Olá, eu sou o Bruno.</strong> Há pouco tempo — cerca de dois meses — iniciei uma jornada que mudou completamente a forma como trabalho com dados.
             </p>
-
             <p>
-              Há pouco tempo — cerca de dois meses — iniciei uma jornada que mudou completamente a forma como trabalho com dados.
-              Tudo começou de maneira simples: fazendo análises e controles no Excel, criando pequenos relatórios para entender
-              melhor as operações do dia a dia.
+              Comecei explorando <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
+              esses dados diretamente no <strong>Power Query</strong>. Hoje, estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
             </p>
-
             <div class="about-full expanded" id="aboutFull">
+              <p>
+                Tudo começou de maneira simples: fazendo análises e controles no Excel, criando pequenos relatórios para entender
+                melhor as operações do dia a dia.
+              </p>
               <p>
                 Com o tempo, percebi o impacto que uma informação bem organizada tem dentro de um processo. Isso despertou minha
                 vontade de ir além.
               </p>
-
               <p>
                 Comecei então a explorar <strong>JSONs vindos de APIs REST</strong>, aprendendo a extrair, tratar e transformar
                 esses dados diretamente no <strong>Power Query</strong>. Esse foi meu primeiro contato com automação e inteligência
                 na coleta e limpeza das informações, e isso abriu uma porta que eu nunca mais quis fechar.
               </p>
-
               <p>
                 Hoje, dei mais um passo importante: estou estudando e aplicando <strong>SQL (Azure SQL)</strong> no meu fluxo de trabalho.
                 As consultas que alimentam meus dashboards agora são feitas diretamente no banco — estruturadas, rápidas e organizadas —
                 e só depois seguem para modelagem no Power BI.
               </p>
-
               <p>
                 Esse avanço não só melhorou a performance dos meus dashboards, como também aumentou muito minha visão sobre dados,
                 processos e indicadores.
               </p>
-
               <p>
                 Ainda tenho muito a aprender — e isso é justamente o que me motiva. Cada projeto é uma oportunidade de evoluir,
                 experimentar e entregar análises mais inteligentes e eficientes.
               </p>
-
               <p>
                 Fique à vontade para explorar minhas criações.  
                 Espero que elas transmitam a mesma dedicação e curiosidade que eu coloco em cada uma.
@@ -81,6 +77,24 @@
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script>
+    // Funcionalidade do botão "Ver mais/Ver menos" no Sobre Mim
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('toggleAbout');
+      const aboutFull = document.getElementById('aboutFull');
+      
+      if (toggleButton && aboutFull) {
+        toggleButton.addEventListener('click', function() {
+          if (aboutFull.classList.contains('expanded')) {
+            aboutFull.classList.remove('expanded');
+            toggleButton.textContent = 'Ver mais';
+          } else {
+            aboutFull.classList.add('expanded');
+            toggleButton.textContent = 'Ver menos';
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
