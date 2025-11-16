@@ -1,179 +1,234 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bruno Pedrosa — Portfólio Data</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="dark-bg">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <div class="nav-inner">
-      <div class="logo">BRUNO <span>DATA</span></div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#dashboards">Dashboards</a>
-        <a href="#skills">Skills</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
+:root {
+  --bg-dark: #0d0f16;
+  --bg-card: #141720;
+  --bg-hover: #1b1f2b;
+  --text-light: #e6e6e6;
+  --text-muted: #9a9a9a;
+  --primary: #6a5acd; /* roxo elegante */
+  --primary-glow: #8c78ff;
+  --border-glow: rgba(138, 114, 255, 0.35);
+}
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-card">
-      <h1>BRUNO PEDROSA <span class="muted">• Auxiliar Administrativo</span></h1>
-      <p class="lead">Estudante de ADS | Transformando dados em clareza — Power BI • SQL • APIs • IA</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#dashboards">Ver Dashboards ↓</a>
-        <a class="btn btn-ghost" href="#sobre">Sobre mim</a>
-      </div>
-    </div>
-  </section>
+/* ============================= */
+/*   RESET E BASE                */
+/* ============================= */
 
-  <!-- SOBRE -->
-  <section id="sobre" class="section section-card">
-    <div class="section-card-inner">
-      <h2>Sobre Mim</h2>
-      <p class="lead">Nos últimos meses, iniciei uma jornada intensa no mundo de dados. Comecei criando dashboards no Excel e, rapidamente, evoluí para trabalhar com JSONs extraídos de APIs REST, tratá-los no Power Query e construir visualizações úteis.</p>
-      <p>Atualmente curso o 1º período de Análise e Desenvolvimento de Sistemas e venho implementando consultas em <strong>Azure SQL</strong> para estruturar os dados antes da modelagem no Power BI — melhorando performance e organização. Ainda estou em evolução, mas já desenvolvi dashboards operacionais que ajudam a tomar decisões no dia a dia.</p>
-      <p class="muted">Fique à vontade para explorar meus projetos abaixo — os dashboards têm páginas individuais onde, em breve, colocarei PDFs e prints.</p>
-    </div>
-  </section>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-  <!-- DASHBOARDS -->
-  <section id="dashboards" class="section section-dark">
-    <div class="section-inner">
-      <h2 class="section-title">Dashboards</h2>
-      <p class="section-sub">Três projetos consistentes com foco em operação e logística.</p>
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
 
-      <div class="cards-grid">
+/* ============================= */
+/*   NAVBAR                      */
+/* ============================= */
 
-        <!-- Card 1 -->
-        <article class="card">
-          <div class="card-icon" aria-hidden>
-            <!-- Truck box SVG simplified -->
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 7h11v10H3z" stroke="#4dd0e1" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 7h3l3 3v7h-6" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="7" cy="18" r="1.6" fill="#4dd0e1"/>
-              <circle cx="18" cy="18" r="1.6" fill="#8a2be2"/>
-            </svg>
-          </div>
-          <h3>Expedição</h3>
-          <p class="card-desc">Análise completa de expedição: tracking de frota, separação, conferência e performance operacional.</p>
-          <div class="card-actions">
-            <a class="btn btn-outline" href="dash-expedicao.html">Abrir Dashboard</a>
-            <button class="icon-btn" title="Detalhes">ℹ️</button>
-          </div>
-        </article>
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  background: rgba(10, 10, 18, 0.65);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 999;
+}
 
-        <!-- Card 2 -->
-        <article class="card">
-          <div class="card-icon" aria-hidden>
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="5" width="18" height="14" rx="2" stroke="#4dd0e1" stroke-width="1.4"/>
-              <path d="M7 9h10" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round"/>
-              <circle cx="9.5" cy="16.5" r="0.9" fill="#4dd0e1"/>
-              <circle cx="14.5" cy="16.5" r="0.9" fill="#8a2be2"/>
-            </svg>
-          </div>
-          <h3>Vendas & Pedidos</h3>
-          <p class="card-desc">Controle de pedidos, notas fiscais e performance por modelo — insights para tomada de decisão.</p>
-          <div class="card-actions">
-            <a class="btn btn-outline" href="dash-vendas.html">Abrir Dashboard</a>
-            <button class="icon-btn" title="Detalhes">ℹ️</button>
-          </div>
-        </article>
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
 
-        <!-- Card 3 -->
-        <article class="card">
-          <div class="card-icon" aria-hidden>
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 12h12" stroke="#4dd0e1" stroke-width="1.4" stroke-linecap="round"/>
-              <path d="M7 6v12" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round"/>
-              <path d="M17 8h4v8h-4" stroke="#8a2be2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3>Logística & Transporte</h3>
-          <p class="card-desc">Monitoramento de viagens, transportadoras, tempos médios e identificação de gargalos operacionais.</p>
-          <div class="card-actions">
-            <a class="btn btn-outline" href="dash-logistica.html">Abrir Dashboard</a>
-            <button class="icon-btn" title="Detalhes">ℹ️</button>
-          </div>
-        </article>
+.logo span {
+  color: var(--primary);
+}
 
-      </div>
-    </div>
-  </section>
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+  transition: 0.2s;
+}
 
-  <!-- SKILLS -->
-  <section id="skills" class="section section-card">
-    <div class="skills-inner">
-      <h2>Skills</h2>
-      <p class="section-sub">Ferramentas e conhecimentos</p>
-      <div class="skills-grid">
-        <span class="skill"><strong>Power BI</strong></span>
-        <span class="skill"><strong>Power Query</strong></span>
-        <span class="skill"><strong>DAX</strong></span>
-        <span class="skill"><strong>Excel</strong></span>
-        <span class="skill"><strong>API / JSON</strong></span>
-        <span class="skill"><strong>SQL (iniciante/intermediário)</strong></span>
-        <span class="skill"><strong>IA / Inteligência Artificial</strong></span>
-      </div>
-    </div>
-  </section>
+.navbar nav a:hover {
+  color: var(--primary);
+}
 
-  <!-- CONTATO -->
-  <section id="contato" class="section section-dark">
-    <div class="section-inner">
-      <h2>Contato</h2>
-      <p class="section-sub">Vamos conversar? Me chama no LinkedIn ou mande um e-mail.</p>
-      <div class="contact-row">
-        <div class="contact-card">
-          <label>Email</label>
-          <div class="contact-line">
-            <input id="emailInput" readonly value="seu.email@exemplo.com" />
-            <button id="copyBtn" class="btn-sm">Copiar</button>
-          </div>
-        </div>
+/* ============================= */
+/*   HERO / HOME                 */
+/* ============================= */
 
-        <div class="contact-card">
-          <label>LinkedIn</label>
-          <div class="contact-line">
-            <a href="https://www.linkedin.com/in/seulink" target="_blank" class="link">linkedin.com/in/seulink</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+.hero {
+  padding-top: 130px;
+  text-align: center;
+  padding-bottom: 120px;
+}
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div>© 2025 Bruno Pedrosa — Portfólio</div>
-  </footer>
+.hero h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 0 0 30px var(--border-glow);
+}
 
-  <!-- SCRIPTS -->
-  <script>
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    });
+.hero p {
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-size: 18px;
+}
 
-    // copy email
-    document.getElementById('copyBtn').addEventListener('click', function(){
-      const el = document.getElementById('emailInput');
-      el.select ? (el.select(), document.execCommand('copy')) : navigator.clipboard.writeText(el.value);
-      this.textContent = 'Copiado!';
-      setTimeout(()=> this.textContent = 'Copiar', 1500);
-    });
-  </script>
-</body>
-</html>
+.hero .btn {
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: var(--primary);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.hero .btn:hover {
+  background: var(--primary-glow);
+  transform: translateY(-3px);
+}
+
+/* ============================= */
+/*   SEÇÕES                      */
+/* ============================= */
+
+section {
+  padding: 80px 12%;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 50px;
+}
+
+/* ============================= */
+/*   SOBRE MIM - CARD            */
+/* ============================= */
+
+.about-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 0 25px rgba(120, 90, 255, 0.1);
+}
+
+/* ============================= */
+/*   DASHBOARD CARDS             */
+/* ============================= */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.dash-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.25s;
+  text-align: center;
+}
+
+.dash-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: 0 0 25px rgba(138, 114, 255, 0.25);
+}
+
+.dash-icon {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.dash-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.dash-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.dash-btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  transition: 0.25s;
+  font-weight: 600;
+}
+
+.dash-btn:hover {
+  background: var(--primary-glow);
+}
+
+/* ============================= */
+/*   SKILLS                      */
+/* ============================= */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-pill {
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.skill-pill:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* ============================= */
+/*   FOOTER                      */
+/* ============================= */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--text-muted);
+  margin-top: 50px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
