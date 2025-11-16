@@ -193,6 +193,68 @@ main {
 }
 
 /* ============================= */
+/*   BOTÃO TOGGLE SOBRE MIM      */
+/* ============================= */
+
+.about-full {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.about-full.expanded {
+  max-height: 2000px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.toggle-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ============================= */
+/*   CONTATO                     */
+/* ============================= */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contact-item a:hover {
+  color: var(--primary-glow);
+  text-decoration: underline;
+}
+
+/* ============================= */
 /*   DASHBOARD CARDS             */
 /* ============================= */
 
