@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio – Bruno Pedrosa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Bruno Pedrosa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="dark-bg">
+  <header class="navbar">
+    <h1 class="logo">BRUNO <span>DATA</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="dashboards.html">Dashboards</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
-<body>
+  <section class="hero neon-glow">
+    <h2>Bem-vindo ao meu Portfólio</h2>
+    <p>Análise de dados • Dashboards • Automação • SQL</p>
+    <a href="dashboards.html" class="btn-neon">Ver Projetos</a>
+  </section>
 
-    <div class="container">
-
-        <h1>Bem-vindo ao meu Portfólio</h1>
-        <p>Obrigado pela visita! Aqui você pode acompanhar minha evolução e meus projetos de análise de dados e dashboards.</p>
-
-        <!-- SOBRE MIM -->
-        <h2>Sobre mim</h2>
-        <p>
-            Há cerca de dois meses iniciei meus estudos e construção de dashboards. Comecei utilizando Excel,
-            mas rapidamente evoluí para trabalhar com dados de APIs REST — realizando extrações de JSON,
-            tratativas e modelagem diretamente no Power Query.
-        </p>
-
-        <p>
-            Atualmente estou aprofundando meus estudos em SQL, e grande parte das consultas dos meus dashboards
-            já é construída diretamente na linguagem, trazendo mais velocidade, organização e clareza para o fluxo de dados.
-        </p>
-
-        <p>
-            Ainda estou em constante evolução e tenho muito a aprender, mas fico totalmente à vontade para que explorem
-            minhas criações abaixo.
-        </p>
-
-        <!-- DASHBOARDS -->
-        <h2>Meus Dashboards</h2>
-
-        <div class="card">
-            <h3>Dashboard 1 – Nome do Projeto</h3>
-            <p>Breve descrição do objetivo do dashboard.</p>
-            <a class="button" href="LINK_DO_SEU_DASHBOARD" target="_blank">Acessar Dashboard</a>
-        </div>
-
-        <div class="card">
-            <h3>Dashboard 2 – Nome do Projeto</h3>
-            <p>Breve descrição do objetivo do dashboard.</p>
-            <a class="button" href="LINK_DO_SEU_DASHBOARD" target="_blank">Acessar Dashboard</a>
-        </div>
-
-        <div class="card">
-            <h3>Dashboard 3 – Nome do Projeto</h3>
-            <p>Breve descrição do objetivo do dashboard.</p>
-            <a class="button" href="LINK_DO_SEU_DASHBOARD" target="_blank">Acessar Dashboard</a>
-        </div>
-
-        <footer>
-            © 2025 Bruno Pedrosa — Portfólio de Dashboards
-        </footer>
-
+  <section class="cards-container">
+    <div class="card neon-border">
+      <h3>Dashboards</h3>
+      <p>Visualizações criadas no Power BI usando dados reais e pipelines eficientes.</p>
+      <a href="dashboards.html" class="btn-card">Explorar</a>
     </div>
+
+    <div class="card neon-border">
+      <h3>Sobre Mim</h3>
+      <p>Conheça minha jornada e evolução no mundo de dados.</p>
+      <a href="sobre.html" class="btn-card">Ler Mais</a>
+    </div>
+
+    <div class="card neon-border">
+      <h3>Contato</h3>
+      <p>Vamos conversar? Fique à vontade para me chamar.</p>
+      <a href="contato.html" class="btn-card">Entrar em Contato</a>
+    </div>
+  </section>
 
 </body>
 </html>
