@@ -1,35 +1,40 @@
-// Funcionalidade do botão "Ver mais/Ver menos" no Sobre Mim
+// Toggle About Details
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleButton = document.getElementById('toggleAbout');
-  const aboutFull = document.getElementById('aboutFull');
-  let isExpanded = false;
-
-  if (toggleButton && aboutFull) {
+  const toggleButton = document.getElementById('toggleDetails');
+  const aboutDetails = document.getElementById('aboutDetails');
+  
+  if (toggleButton && aboutDetails) {
     toggleButton.addEventListener('click', function() {
-      if (isExpanded) {
-        aboutFull.classList.remove('expanded');
-        toggleButton.textContent = 'Ver mais';
+      if (aboutDetails.classList.contains('expanded')) {
+        aboutDetails.classList.remove('expanded');
+        toggleButton.innerHTML = '<span>Ver mais</span><i class="bx bx-chevron-down"></i>';
       } else {
-        aboutFull.classList.add('expanded');
-        toggleButton.textContent = 'Ver menos';
+        aboutDetails.classList.add('expanded');
+        toggleButton.innerHTML = '<span>Ver menos</span><i class="bx bx-chevron-up"></i>';
       }
-      isExpanded = !isExpanded;
     });
   }
 
-  // Scroll suave para âncoras
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        const headerHeight = document.querySelector('.navbar').offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-        
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
+  // Active navigation link
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.navbar a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      
+      if (scrollY >= (sectionTop - 200)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').substring(1) === current) {
+        link.classList.add('active');
       }
     });
   });
