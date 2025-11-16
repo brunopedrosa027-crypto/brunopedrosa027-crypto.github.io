@@ -1,0 +1,176 @@
+/* ===========================
+   RESET E CONFIGURAÇÕES
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d; /* Preto elegante */
+    color: #e6e6e6; /* Cinza claro suave */
+    line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 100px auto;
+}
+
+
+/* ===========================
+   MENU SUPERIOR
+=========================== */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 14px 0;
+    z-index: 999;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.nav-links .active {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+
+/* ===========================
+   PÁGINA SOBRE MIM
+=========================== */
+.about-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-section p {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    color: #d4d4d4;
+}
+
+
+/* ===========================
+   DASHBOARD PAGE
+=========================== */
+.dash-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.dash-subtitle {
+    color: #b5b5b5;
+    margin-bottom: 40px;
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.dash-card {
+    background: #141414;
+    border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.dash-card:hover {
+    transform: translateY(-5px);
+    border-color: #4d4d4d;
+}
+
+.dash-card h2 {
+    margin-bottom: 10px;
+}
+
+.dash-card p {
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #222;
+    color: #e6e6e6;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+    border: 1px solid #333;
+}
+
+.btn:hover {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+
+/* ===========================
+   IMAGENS DO DASHBOARD
+=========================== */
+.dash-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1f1f1f;
+}
+
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none; /* Simples por enquanto — pode virar menu mobile depois */
+    }
+}
