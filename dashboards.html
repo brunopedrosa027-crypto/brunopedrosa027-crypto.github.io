@@ -1,75 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboards - Portfólio</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboards - Portfólio Bruno Pedrosa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="dark-bg">
+  <header class="navbar">
+    <h1 class="logo">BRUNO <span>DATA</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="dashboards.html">Dashboards</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
-<body>
+  <section class="page-title">
+    <h2>Meus Dashboards</h2>
+    <p>Selecione um projeto para visualizar. Todos os cards são interativos.</p>
+  </section>
 
-    <!-- MENU -->
-    <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">Portfólio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a class="active" href="dashboards.html">Dashboards</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="dashboard-list">
 
-    <main class="container">
+    <!-- DASHBOARD 1 -->
+    <div class="dash-card">
+      <div class="dash-icon">📦</div>
+      <h3>Dashboard de Expedição</h3>
+      <p>Painel completo de análise operacional, tracking de frota e performance de expedição.</p>
+      <a href="#" class="dash-btn">Abrir Dashboard</a>
+    </div>
 
-        <section class="dash-section">
+    <!-- DASHBOARD 2 -->
+    <div class="dash-card">
+      <div class="dash-icon">📊</div>
+      <h3>Vendas & Pedidos</h3>
+      <p>Análise detalhada de pedidos, notas fiscais, modelos e distribuição.</p>
+      <a href="#" class="dash-btn">Abrir Dashboard</a>
+    </div>
 
-            <h1 class="dash-title">Meus Dashboards</h1>
-            <p class="dash-subtitle">Algumas das análises e visualizações que desenvolvi recentemente</p>
+    <!-- DASHBOARD 3 -->
+    <div class="dash-card">
+      <div class="dash-icon">🚚</div>
+      <h3>Logística & Transporte</h3>
+      <p>Indicadores de viagens, transportadoras, tempo médio e gargalos operacionais.</p>
+      <a href="#" class="dash-btn">Abrir Dashboard</a>
+    </div>
 
-            <div class="dash-grid">
+    <!-- DASHBOARD 4 -->
+    <div class="dash-card">
+      <div class="dash-icon">⚙️</div>
+      <h3>Office & PDI</h3>
+      <p>Fluxo completo de entrada e saída de oficina com acompanhamento de SLA.</p>
+      <a href="#" class="dash-btn">Abrir Dashboard</a>
+    </div>
 
-                <!-- DASHBOARD CARD 1 -->
-                <div class="dash-card">
-                    <img src="assets/img/dashboard1.png" alt="Dashboard 1">
-                    <h2>Dashboard Operacional</h2>
-                    <p>
-                        Painel focado no acompanhamento da operação: separação, conferência, oficina 
-                        e expedição.  
-                        A base é alimentada por consultas SQL no Azure e modelada no Power BI.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Abrir no Power BI</a>
-                </div>
-
-                <!-- DASHBOARD CARD 2 -->
-                <div class="dash-card">
-                    <img src="assets/img/dashboard2.png" alt="Dashboard 2">
-                    <h2>Controle de Frota & Expedição</h2>
-                    <p>
-                        Dashboard com visão completa do fluxo operacional da frota, integração com APIs REST 
-                        (JSON) e transformação no Power Query.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Abrir no Power BI</a>
-                </div>
-
-                <!-- DASHBOARD CARD 3 -->
-                <div class="dash-card">
-                    <img src="assets/img/dashboard3.png" alt="Dashboard 3">
-                    <h2>Monitoramento de Indicadores</h2>
-                    <p>
-                        Indicadores estratégicos para tomada de decisão.  
-                        Modelagem híbrida: SQL + Power BI + transformações avançadas.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Abrir no Power BI</a>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
+  </section>
 </body>
 </html>
